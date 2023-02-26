@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <section class="flex justify-between w-[95%]  px-10 mt-5 rounded-md items-center mx-auto bg-[#E7F4FB]">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-3xl font-bold">Interactive</h1>
+                <h3 class="text-sm font-semibold opacity-60">Geometry Genius <i class="fa-solid fa-xmark"></i></h3>
+            </div>
+            <div>
+                <button id="blog-btn" class="bg-blue-500 px-5 rounded-lg">Blog</button>
+            </div>
+        </section>
+    </header>
+
+    <main class="">
+        <section class="my-8 w-[95%] mx-auto gap-4 flex flex-col md:flex-row lg:flex-row ">
+            <div class="w-full  md:w-full lg:w-[70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div id="cardone" class="  card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure  h-40">
+                        <img class="w-[90%] mx-auto " src="./images/triangle.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="triangle" class="font-semibold text-center">Triangle</h3>
+                        <h5 class="font-semibold text-xs text-center">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> <span>b</span> <i class="fa-solid fa-xmark"></i> <span>h</span>
+                        </h5>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5 items-center mt-3">
+                            <input id="triangle-b" placeholder="b" class="w-12 h-5 rounded-sm pl-3 text-xs" type="text">
+                            <span class="text-xs"> cm</span>
+                            <input id="triangle-h" placeholder="h" class="w-12 h-5 rounded-sm pl-3 text-xs" type="text">
+                            <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-triangle-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+
+                <div class=" card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure  h-40 ">
+                        <img class="w-full mx-auto " src="./images/rectangle.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="rectangle" class="font-semibold text-center">Rectangle</h3>
+                        <h5 class="font-semibold text-xs text-center">Area (A) = <span>w </span> <i class="fa-solid fa-xmark"></i><span> l</span>
+                        </h5>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5 items-center mt-3">
+                            <input id="rectangle-w" placeholder="w" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                            <input id="rectangle-l" placeholder="l" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-rectangle-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+
+                <div class=" card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure  h-40 ">
+                        <img class="w-full mx-auto " src="./images/parallelogram.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="parallelogram" class="font-semibold text-center">Parallelogram</h3>
+                        <h5 class="font-semibold text-xs text-center">Area (A) =<span>b</span> <i class="fa-solid fa-xmark"></i> <span>h</span>
+                        </h5>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5 items-center mt-3">
+                            <input id="Parallelogram-b" placeholder="b" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                            <input id="Parallelogram-h" placeholder="h" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-parallelogram-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+
+                <div class=" card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure h-40">
+                        <img class="w-[75%]  mx-auto " src="./images/rhombus.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="rhombus" class="font-semibold text-center">Rhombus</h3>
+                        <h5 class="font-semibold text-xs text-center">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> <span>d<sub>1</sub> </span>
+                            <i class="fa-solid fa-xmark"></i> <span>d<sub>2</sub></span>
+                        </h5>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5  items-center mt-3">
+                            <input id="rhombus-d1" placeholder="d1" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                            <input id="rhombus-d2" placeholder="d2" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-rhombus-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+
+                <div class=" card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure h-40">
+                        <img class="w-[75%]  mx-auto " src="./images/pentagon.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="pentagon" class="font-semibold text-center">Pentagon</h3>
+                        <h5 class="font-semibold text-xs text-center">Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> <span>p</span> <i class="fa-solid fa-xmark"></i> <span>b</span>
+                        </h5>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5 items-center mt-3">
+                            <input id="pentagone-p" placeholder="p" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                            <input id="pentagone-b" placeholder="b" class="w-12 h-5 rounded-sm pl-3 text-xs"
+                                type="text"> <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-pentagone-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+
+                <div class=" card bg-slate-100 shadow-lg flex flex-col items-center py-12 px-8">
+                    <div class="card-figure h-40">
+                        <img class="w-[75%]  mx-auto " src="./images/ellipse.png" alt="">
+                    </div>
+                    <div class=" mt-6">
+                        <h3 id="ellipse" class="font-semibold text-center">Ellipse</h3>
+                       <div class="flex justify-center items-center">
+                        <h5 class="font-semibold text-xs text-center">Area (A) = 
+                        </h5>
+                        <img class="w-[15%]" src="./images/icons8-pi-24.png" alt="">
+                        <p class="font-semibold text-xs ">ab</p>
+                       </div>
+                    </div>
+                    <div class=" ">
+                        <div class="flex justify-between gap-1.5 items-center mt-3">
+                            <input id="ellipse-a" placeholder="a" class="w-12 h-5 rounded-sm pl-3 text-xs" type="text">
+                            <span class="text-xs"> cm</span>
+                            <input id="ellipse-b" placeholder="b" class="w-12 h-5 rounded-sm pl-3 text-xs" type="text">
+                            <span class="text-xs"> cm</span>
+                        </div>
+                    </div>
+                    <button id="calculate-ellipse-area"
+                        class="bg-blue-500 rounded-md  text-white font-semibold px-8 py-1.5 mt-6 w-full">Calculate</button>
+                </div>
+            </div>
+
+            <div class="w-full mx-auto  md:w-full lg:w-[30%] ">
+                <h1 class="text-4xl font-semibold underline text-center">Area Calculation</h1>
+
+                <table class="table table-compact mt-5">
+                    <tbody id="table-container" class="table-body">
+                        <!-- <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                      </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+    <script src="./style/index.js"></script>
+</body>
+</html>
